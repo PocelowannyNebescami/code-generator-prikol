@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"code-generator/generator"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("code:", 0)
+	config := generator.Config{Length: 24}
+	generator, err := generator.Init(config)
+	if err != nil {
+		fmt.Println("Generator is not set properly:", err)
+	}
+
+	fmt.Println("code:", generator.Generate())
 }
