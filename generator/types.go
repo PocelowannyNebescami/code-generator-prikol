@@ -1,7 +1,7 @@
 package generator
 
 type Generator struct {
-	Length                   int    // Длина генерируемого кода
+	Length                   uint   // Длина генерируемого кода
 	UseLowerCaseLetters      bool   // Использовать строчные буквы
 	UseUpperCaseLetters      bool   // Использовать заглавные буквы
 	UseNumbers               bool   // Использовать цифры
